@@ -42,8 +42,11 @@ func main() {
 	}
 }
 
+// TODO: Add the ability to save, view and play favourite URLs
+// Probably save them to some file ~/.syclirc where you can alias each URL
+// and then the run command could take a URL or a favourite alias
 const (
-	HELP_MESSAGE        = "Usage:\n\tsycli <command> [options...]\n\nCommands:\n- run [youtube link]\n"
+	HELP_MESSAGE        = "Usage:\n\tsycli <command> [options...]\n\nCommands:\n- run [youtube link]\n- quit\n- pause\n- volume [0-100]\n"
 	RUN_HELP_MESSAGE    = "Usage:\n\tsycli run [youtube link]\n"
 	VOLUME_HELP_MESSAGE = "Usage:\n\tsycli volume [0-100]\n"
 	C_RUN               = "run"
